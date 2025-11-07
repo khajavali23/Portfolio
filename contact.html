@@ -167,119 +167,144 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-7 order-first order-md-last mt-sm-4 mt-lg-0">
-                                <form
-                                    id="contact-form"
-                                    class="contact-form"
-                                    method="POST"
-                                    action="https://formspree.io/f/mnqekxyz"
-                                >
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="name"
-                                            name="name"
-                                            placeholder="Name"
-                                            required
-                                        />
-                                        <label for="name">Name</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="email"
-                                            class="form-control"
-                                            id="email"
-                                            name="email"
-                                            placeholder="name@example.com"
-                                            required
-                                        />
-                                        <label for="email">Email address</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="number"
-                                            class="form-control"
-                                            id="phone"
-                                            name="phone"
-                                            placeholder="Phone"
-                                            required
-                                        />
-                                        <label for="phone">Phone</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="company-name"
-                                            name="company-name"
-                                            placeholder="Company Name"
-                                        />
-                                        <label for="company-name">Company Name</label>
-                                    </div>
+                          <div class="col-12 col-lg-7 order-first order-md-last mt-sm-4 mt-lg-0">
+  <form
+    id="contact-form"
+    class="contact-form"
+    method="POST"
+    action="https://formspree.io/f/xkgpdajj"
+  >
+    <!-- Hidden Subject Line -->
+    <input type="hidden" name="_subject" value="New Message from Portfolio Contact Form">
 
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="exact-budget"
-                                            name="exact-budget"
-                                            placeholder="Exact budget"
-                                        />
-                                        <label for="exact-budget">Do you have an exact budget?</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="timeline"
-                                            name="timeline"
-                                            placeholder="Timeline"
-                                        />
-                                        <label for="timeline">What is your timeline?</label>
-                                    </div>
-                                    <div class="form-floating mb-4">
-                                        <textarea
-                                            class="form-control"
-                                            id="message"
-                                            name="message"
-                                            placeholder="Leave a comment here"
-                                            style="height: 100px"
-                                        ></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                    <button type="submit" class="btn magnetic-button">
-                                        Submit Message <i class="icon bi bi-arrow-right ms-1"></i><span></span>
-                                    </button>
-                                </form>
-                                <p class="form-message"></p>
-                            </div>
-                            <script>
-                                document.addEventListener("DOMContentLoaded", function () {
-                                    const form = document.getElementById("contact-form");
-                                    const message = document.querySelector(".form-message");
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="Name"
+        required
+      />
+      <label for="name">Name</label>
+    </div>
 
-                                    form.addEventListener("submit", async function (e) {
-                                        e.preventDefault();
+    <div class="form-floating mb-3">
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="name@example.com"
+        required
+      />
+      <label for="email">Email address</label>
+    </div>
 
-                                        const formData = new FormData(form);
-                                        const response = await fetch(form.action, {
-                                            method: form.method,
-                                            body: formData,
-                                            headers: { Accept: "application/json" },
-                                        });
+    <div class="form-floating mb-3">
+      <input
+        type="number"
+        class="form-control"
+        id="phone"
+        name="phone"
+        placeholder="Phone"
+        required
+      />
+      <label for="phone">Phone</label>
+    </div>
 
-                                        if (response.ok) {
-                                            message.textContent = "✅ Message sent successfully!";
-                                            message.style.color = "green";
-                                            form.reset();
-                                        } else {
-                                            message.textContent = "❌ Something went wrong. Please try again.";
-                                            message.style.color = "red";
-                                        }
-                                    });
-                                });
-                            </script>
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="company-name"
+        name="company-name"
+        placeholder="Company Name"
+      />
+      <label for="company-name">Company Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="exact-budget"
+        name="exact-budget"
+        placeholder="Exact budget"
+      />
+      <label for="exact-budget">Do you have an exact budget?</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="timeline"
+        name="timeline"
+        placeholder="Timeline"
+      />
+      <label for="timeline">What is your timeline?</label>
+    </div>
+
+    <div class="form-floating mb-4">
+      <textarea
+        class="form-control"
+        id="message"
+        name="message"
+        placeholder="Leave a comment here"
+        style="height: 100px"
+        required
+      ></textarea>
+      <label for="message">Message</label>
+    </div>
+
+    <button type="submit" class="btn magnetic-button">
+      Submit Message <i class="icon bi bi-arrow-right ms-1"></i><span></span>
+    </button>
+  </form>
+
+  <!-- Message feedback -->
+  <p class="form-message mt-3 fw-bold"></p>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const message = document.querySelector(".form-message");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { Accept: "application/json" }
+      });
+
+      if (response.ok) {
+        message.textContent = "✅ Thank you! Your message has been sent successfully.";
+        message.style.color = "green";
+        form.reset();
+      } else {
+        const errorData = await response.json();
+        console.error("Formspree error:", errorData);
+        message.textContent = "❌ Something went wrong. Please try again.";
+        message.style.color = "red";
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      message.textContent = "❌ Network error. Please try again later.";
+      message.style.color = "red";
+    }
+  });
+});
+</script>
+
+
+
                         </div>
                     </div>
                 </section>
@@ -408,35 +433,33 @@
                                 <hr />
 
                                 <!-- Socials -->
-                               <div class="socials offcanvas-body">
-    <nav class="nav">
-        <a
-            class="nav-link swap-icon"
-            href="https://github.com/khajavali23"
-            target="_blank"
-        >
-            GitHub <i class="icon rotate bi bi-arrow-right-short"></i>
-        </a>
+                                <div class="socials offcanvas-body">
+                                    <nav class="nav">
+                                        <a
+                                            class="nav-link swap-icon"
+                                            href="https://github.com/khajavali23"
+                                            target="_blank"
+                                        >
+                                            GitHub <i class="icon rotate bi bi-arrow-right-short"></i>
+                                        </a>
 
-        <a
-            class="nav-link swap-icon"
-            href="https://www.linkedin.com/in/khajavali-dev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"
-        >
-            LinkedIn <i class="icon rotate bi bi-arrow-right-short"></i>
-        </a>
+                                        <a
+                                            class="nav-link swap-icon"
+                                            href="https://www.linkedin.com/in/khajavali-dev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                            target="_blank"
+                                        >
+                                            LinkedIn <i class="icon rotate bi bi-arrow-right-short"></i>
+                                        </a>
 
-       
-        <a
-            class="nav-link swap-icon"
-            href="https://www.instagram.com/0khajavali0?utm_source=qr&igsh=MW11c2Z2ZHAxNGlyMQ=="
-            target="_blank"
-        >
-            Instagram <i class="icon rotate bi bi-arrow-right-short"></i>
-        </a>
-    </nav>
-</div>
-
+                                        <a
+                                            class="nav-link swap-icon"
+                                            href="https://www.instagram.com/0khajavali0?utm_source=qr&igsh=MW11c2Z2ZHAxNGlyMQ=="
+                                            target="_blank"
+                                        >
+                                            Instagram <i class="icon rotate bi bi-arrow-right-short"></i>
+                                        </a>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
