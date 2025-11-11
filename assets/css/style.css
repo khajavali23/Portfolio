@@ -1607,6 +1607,7 @@ header .navbar-expand .dropdown:hover > .dropdown-menu {
 .hero-section .intro-text {
   font-size: 20px;
   font-weight: 500;
+  color: #030712;
 }
 .hero-section h1 span {
   color: var(--primary-t-color-2);
