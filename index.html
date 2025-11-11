@@ -25,7 +25,7 @@
         <title>Khajavali Shaik | MERN Stack Developer Portfolio</title>
 
         <!-- Favicon -->
-        <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+        <link rel="icon" href="assets/img/logo/logo.png" type="image/png" />
 
         <!-- Open Graph (for sharing on social media) -->
         <meta property="og:title" content="Khajavali Shaik | MERN Stack Developer" />
@@ -398,7 +398,96 @@
 
                     <!-- Marquee -->
                     <div class="marquee">
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled marquee-track">
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/html-5.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/css3.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/java-script.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/react.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/django.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/nodejs.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/mysql.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/responsive.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/seo.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/figma.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <a href="#" class="marquee-item rounded">
+                                    <div class="marquee-content">
+                                        <img src="assets/img/content/adobe-photoshop.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!-- Duplicate for seamless loop -->
                             <li class="item">
                                 <a href="#" class="marquee-item rounded">
                                     <div class="marquee-content">
@@ -488,99 +577,43 @@
                             </li>
                         </ul>
                     </div>
+                    <style>
+                        .marquee {
+                            overflow: hidden;
+                            position: relative;
+                            width: 100%;
+                        }
+
+                        .marquee-track {
+                            display: flex;
+                            width: max-content;
+                            animation: scroll 20s linear infinite;
+                        }
+
+                        .marquee-track .item {
+                            flex: 0 0 auto;
+                            margin: 0; /* removes gap */
+                            padding: 0;
+                        }
+
+                        .marquee-content img {
+                            width: 70px;
+                            height: auto;
+                            display: block;
+                        }
+
+                        /* Infinite loop animation */
+                        @keyframes scroll {
+                            from {
+                                transform: translateX(0);
+                            }
+                            to {
+                                transform: translateX(-50%);
+                            }
+                        }
+                    </style>
 
                     <!-- Testimonials -->
-                    <div class="container">
-                        <div class="row testimonials justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-7">
-                                <div class="swiper-container slider-min items">
-                                    <div class="swiper-wrapper">
-                                        <!-- Single Slide -->
-                                        <div class="swiper-slide item">
-                                            <div class="testimonial text-center border rounded-5 p-4 p-md-0">
-                                                <!-- Testimonial Meta -->
-                                                <div class="testimonial-meta">
-                                                    <div class="testimonial-thumb">
-                                                        <img
-                                                            class="rounded-circle"
-                                                            src="assets/img/content/user.png"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <h5 class="client-name mt-3 mb-1">Aditya Verma</h5>
-                                                    <span class="client-position">Founder, GreenLeaf Studios</span>
-                                                </div>
-                                                <!-- Testimonial Content -->
-                                                <div class="testimonial-content mt-4">
-                                                    <p>
-                                                        “Working with Khajavali was an incredible experience. His
-                                                        attention to detail and strong technical skills brought our
-                                                        website to life. The project was delivered on time and exceeded
-                                                        all our expectations. Highly recommended!”
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single Slide -->
-                                        <div class="swiper-slide item">
-                                            <div class="testimonial text-center border rounded-5 p-4 p-md-0">
-                                                <!-- Testimonial Meta -->
-                                                <div class="testimonial-meta">
-                                                    <div class="testimonial-thumb">
-                                                        <img
-                                                            class="rounded-circle"
-                                                            src="assets/img/content/user.png"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <h5 class="client-name mt-3 mb-1">Priya Sharma</h5>
-                                                    <span class="client-position">CEO, Blossom Creations</span>
-                                                </div>
-                                                <!-- Testimonial Content -->
-                                                <div class="testimonial-content mt-4">
-                                                    <p>
-                                                        “Khajavali is a talented and reliable developer. He understands
-                                                        client requirements deeply and delivers smooth, responsive
-                                                        websites. The communication throughout the project was
-                                                        professional and transparent.”
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single Slide -->
-                                        <div class="swiper-slide item">
-                                            <div class="testimonial text-center border rounded-5 p-4 p-md-0">
-                                                <!-- Testimonial Meta -->
-                                                <div class="testimonial-meta">
-                                                    <div class="testimonial-thumb">
-                                                        <img
-                                                            class="rounded-circle"
-                                                            src="assets/img/content/user.png"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <h5 class="client-name mt-3 mb-1">Hemanth</h5>
-                                                    <span class="client-position">Manager, ThinkB Agency</span>
-                                                </div>
-                                                <!-- Testimonial Content -->
-                                                <div class="testimonial-content mt-4">
-                                                    <p>
-                                                        “Khajavali consistently delivers high-quality work. His
-                                                        problem-solving approach and ability to handle both frontend and
-                                                        backend tasks make him an excellent full-stack developer. We
-                                                        look forward to working with him again.”
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </section>
 
                 <!-- ***** Services Area End ***** -->
@@ -613,8 +646,7 @@
                                             <h4 class="title mt-0 mb-3">Best Performance Award</h4>
                                             <span class="tags mt-3 mt-md-0">2024 - ThinkB Agency</span>
                                         </div>
-                                        <!-- Award Button -->
-                                        <a class="award-btn rounded-pill" href="about.html">
+                                        <a class="award-btn rounded-pill" href="#">
                                             <i class="icon rotate bi bi-arrow-right-short m-0"></i>
                                         </a>
                                     </li>
@@ -622,11 +654,25 @@
                                     <!-- Item -->
                                     <li class="list-group-item">
                                         <div class="content">
-                                            <h4 class="title mt-0 mb-3">7× Dashboard Winner</h4>
-                                            <span class="tags mt-3 mt-md-0">2023 - CCBP NxtWave Platform</span>
+                                            <h4 class="title mt-0 mb-3">Certified MERN Stack Developer</h4>
+                                            <span class="tags mt-3 mt-md-0"
+                                                >2024 - NxtWave CCBP 4.0 Program (9-Month Course)</span
+                                            >
                                         </div>
-                                        <!-- Award Button -->
-                                        <a class="award-btn rounded-pill" href="about.html">
+                                        <a class="award-btn rounded-pill" href="#">
+                                            <i class="icon rotate bi bi-arrow-right-short m-0"></i>
+                                        </a>
+                                    </li>
+
+                                    <!-- Item -->
+                                    <li class="list-group-item">
+                                        <div class="content">
+                                            <h4 class="title mt-0 mb-3">Internship Excellence Award</h4>
+                                            <span class="tags mt-3 mt-md-0"
+                                                >2023 - ThinkB Agency (4-Month Internship)</span
+                                            >
+                                        </div>
+                                        <a class="award-btn rounded-pill" href="#">
                                             <i class="icon rotate bi bi-arrow-right-short m-0"></i>
                                         </a>
                                     </li>
@@ -635,10 +681,20 @@
                                     <li class="list-group-item">
                                         <div class="content">
                                             <h4 class="title mt-0 mb-3">Top Performer in Full Stack Development</h4>
-                                            <span class="tags mt-3 mt-md-0">2023 - CCBP NxtWave Program</span>
+                                            <span class="tags mt-3 mt-md-0">2023 - CCBP NxtWave Platform</span>
                                         </div>
-                                        <!-- Award Button -->
-                                        <a class="award-btn rounded-pill" href="about.html">
+                                        <a class="award-btn rounded-pill" href="#">
+                                            <i class="icon rotate bi bi-arrow-right-short m-0"></i>
+                                        </a>
+                                    </li>
+
+                                    <!-- Item -->
+                                    <li class="list-group-item">
+                                        <div class="content">
+                                            <h4 class="title mt-0 mb-3">Bachelor’s Degree in Commerce</h4>
+                                            <span class="tags mt-3 mt-md-0">2023 - Acharya Nagarjuna University</span>
+                                        </div>
+                                        <a class="award-btn rounded-pill" href="#">
                                             <i class="icon rotate bi bi-arrow-right-short m-0"></i>
                                         </a>
                                     </li>
@@ -658,9 +714,9 @@
                                 <!-- Intro -->
                                 <div class="intro d-flex justify-content-between align-items-center">
                                     <h3 class="title">Insights</h3>
-                                    <a class="btn btn-outline content-btn swap-icon" href="blog.html"
-                                        >View All <i class="icon bi bi-arrow-right-short"></i
-                                    ></a>
+                                    <a class="btn btn-outline content-btn swap-icon" href="blog.html">
+                                        View All <i class="icon bi bi-arrow-right-short"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -670,8 +726,7 @@
                                 <!-- Post -->
                                 <div class="card blog-item">
                                     <div class="image-holder">
-                                        <!-- Card Thumb -->
-                                        <a class="card-thumb" href="blog-single.html">
+                                        <a class="card-thumb" href="engaging-web-experiences-frontend-tools.html">
                                             <img src="assets/img/blog/blog-1.jpg" alt="" />
                                         </a>
                                         <div class="card-overlay top fade-down">
@@ -680,27 +735,26 @@
                                             </div>
                                             <div class="post-meta d-flex flex-column ms-3">
                                                 <span>Posted by</span>
-                                                <span class="post-author"><strong>themeland</strong></span>
+                                                <span class="post-author"><strong>Khajavali</strong></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Card Overlay -->
                                     <div class="card-content mt-3">
                                         <div class="heading">
                                             <div class="post-meta d-flex">
                                                 <span class="post-date"
-                                                    ><i class="bi bi-clock me-1"></i>August 20, 2024</span
+                                                    ><i class="bi bi-clock me-1"></i>October 15, 2025</span
                                                 >
                                             </div>
                                             <h4 class="title my-2">
-                                                <a href="blog-single.html"
-                                                    >The Future of Digital Design - Trends to Watch</a
+                                                <a href="engaging-web-experiences-frontend-tools.html"
+                                                    >Crafting Engaging Web Experiences with Modern Frontend Tools</a
                                                 >
                                             </h4>
                                             <div class="card-terms">
-                                                <a class="terms badge" href="#">Branding</a>
-                                                <a class="terms badge" href="#">Design</a>
-                                                <a class="terms badge" href="#">Trends</a>
+                                                <a class="terms badge" href="#">Frontend</a>
+                                                <a class="terms badge" href="#">React</a>
+                                                <a class="terms badge" href="#">UI/UX</a>
                                             </div>
                                         </div>
                                     </div>
@@ -711,8 +765,7 @@
                                 <!-- Post -->
                                 <div class="card blog-item">
                                     <div class="image-holder">
-                                        <!-- Card Thumb -->
-                                        <a class="card-thumb" href="blog-single.html">
+                                        <a class="card-thumb" href="building-scalable-mern-applications.html">
                                             <img src="assets/img/blog/blog-2.jpg" alt="" />
                                         </a>
                                         <div class="card-overlay top fade-down">
@@ -721,26 +774,26 @@
                                             </div>
                                             <div class="post-meta d-flex flex-column ms-3">
                                                 <span>Posted by</span>
-                                                <span class="post-author"><strong>themeland</strong></span>
+                                                <span class="post-author"><strong>Khajavali</strong></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Card Overlay -->
                                     <div class="card-content mt-3">
                                         <div class="heading">
                                             <div class="post-meta d-flex">
                                                 <span class="post-date"
-                                                    ><i class="bi bi-clock me-1"></i>August 20, 2024</span
+                                                    ><i class="bi bi-clock me-1"></i>September 12, 2025</span
                                                 >
                                             </div>
                                             <h4 class="title my-2">
-                                                <a href="blog-single.html"
-                                                    >Building User Trust Through Thoughtful UI/UX Design</a
+                                                <a href="building-scalable-mern-applications.html"
+                                                    >Building Scalable Full Stack Applications Using the MERN Stack</a
                                                 >
                                             </h4>
                                             <div class="card-terms">
-                                                <a class="terms badge" href="#">UI/UX</a>
-                                                <a class="terms badge" href="#">Software</a>
+                                                <a class="terms badge" href="#">Full Stack</a>
+                                                <a class="terms badge" href="#">MERN</a>
+                                                <a class="terms badge" href="#">Development</a>
                                             </div>
                                         </div>
                                     </div>
@@ -751,8 +804,7 @@
                                 <!-- Post -->
                                 <div class="card blog-item">
                                     <div class="image-holder">
-                                        <!-- Card Thumb -->
-                                        <a class="card-thumb" href="blog-single.html">
+                                        <a class="card-thumb" href="from-internship-to-professional-developer.html">
                                             <img src="assets/img/blog/blog-3.jpg" alt="" />
                                         </a>
                                         <div class="card-overlay top fade-down">
@@ -761,27 +813,26 @@
                                             </div>
                                             <div class="post-meta d-flex flex-column ms-3">
                                                 <span>Posted by</span>
-                                                <span class="post-author"><strong>themeland</strong></span>
+                                                <span class="post-author"><strong>Khajavali</strong></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Card Overlay -->
                                     <div class="card-content mt-3">
                                         <div class="heading">
                                             <div class="post-meta d-flex">
                                                 <span class="post-date"
-                                                    ><i class="bi bi-clock me-1"></i>August 20, 2024</span
+                                                    ><i class="bi bi-clock me-1"></i>August 22, 2025</span
                                                 >
                                             </div>
                                             <h4 class="title my-2">
-                                                <a href="blog-single.html"
-                                                    >The Role of Color Psychology in Effective Branding</a
+                                                <a href="from-internship-to-professional-developer.html"
+                                                    >From Internship to Agency Work — My Journey in Web Development</a
                                                 >
                                             </h4>
                                             <div class="card-terms">
-                                                <a class="terms badge" href="#">Design</a>
-                                                <a class="terms badge" href="#">Branding</a>
-                                                <a class="terms badge" href="#">Technology</a>
+                                                <a class="terms badge" href="#">Career</a>
+                                                <a class="terms badge" href="#">Experience</a>
+                                                <a class="terms badge" href="#">Growth</a>
                                             </div>
                                         </div>
                                     </div>
@@ -790,6 +841,7 @@
                         </div>
                     </div>
                 </section>
+
                 <!-- ***** Insights Area End ***** -->
 
                 <!-- ***** CTA Area Start ***** -->
@@ -850,9 +902,10 @@
                                 >
                                     <!-- Copyright -->
                                     <div class="copyright">
-                                        &copy;2024 Khajavali, All Rights Reserved By
-                                        <a href="https://themeforest.net/user/theme_land" target="_blank">Themeland</a>
+                                        &copy;2025 Khajavali, All Rights Reserved By
+                                        <a href="#" target="_blank">Khajavali Dev</a>
                                     </div>
+
                                     <!-- Scroll To Top -->
                                     <div id="scroll-to-top" class="scroll-to-top mt-3 mt-sm-0">
                                         <a href="#header" class="smooth-anchor">Scroll to Top</a>
