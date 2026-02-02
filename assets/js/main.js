@@ -820,3 +820,47 @@
 	});
 
 }(jQuery));
+
+ document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+    const messageBox = document.querySelector(".form-message");
+
+    if (!form) return;
+
+    let isSubmitting = false; // 🔒 LOCK
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      if (isSubmitting) return; // ⛔ stop second call
+      isSubmitting = true;
+
+      messageBox.textContent = "Sending message...";
+      messageBox.style.color = "#555";
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" },
+        });
+
+        if (response.ok) {
+          messageBox.textContent = "✅ Message sent successfully!";
+          messageBox.style.color = "green";
+          form.reset();
+        } else {
+          messageBox.textContent = "❌ Something went wrong. Try again.";
+          messageBox.style.color = "red";
+        }
+      } catch {
+        messageBox.textContent = "❌ Network error. Please try again.";
+        messageBox.style.color = "red";
+      } finally {
+        // unlock after short delay (safety)
+        setTimeout(() => {
+          isSubmitting = false;
+        }, 1000);
+      }
+    });
+  });

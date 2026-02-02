@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <!-- Mirrored from theme-land.com/Khajavali/demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jul 2025 06:02:34 GMT -->
+   
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -202,17 +202,18 @@
                             </div>
                             <div class="col-12 col-lg-7 order-first order-md-last mt-sm-4 mt-lg-0">
                                 <form
-                                    id="contact-form"
-                                    class="contact-form"
-                                    method="POST"
-                                    action="https://formspree.io/f/xkgpdajj"
+                                      id="contact-form"
+  method="POST"
+  action="https://formspree.io/f/mpqljrpj"
                                 >
-                                    <!-- Hidden Subject Line -->
                                     <input
                                         type="hidden"
                                         name="_subject"
                                         value="New Message from Portfolio Contact Form"
                                     />
+
+                                    <!-- Honeypot (spam protection) -->
+                                    <input type="text" name="_gotcha" style="display: none" />
 
                                     <div class="form-floating mb-3">
                                         <input
@@ -240,7 +241,7 @@
 
                                     <div class="form-floating mb-3">
                                         <input
-                                            type="number"
+                                            type="tel"
                                             class="form-control"
                                             id="phone"
                                             name="phone"
@@ -255,7 +256,7 @@
                                             type="text"
                                             class="form-control"
                                             id="company-name"
-                                            name="company-name"
+                                            name="company_name"
                                             placeholder="Company Name"
                                         />
                                         <label for="company-name">Company Name</label>
@@ -266,7 +267,7 @@
                                             type="text"
                                             class="form-control"
                                             id="exact-budget"
-                                            name="exact-budget"
+                                            name="budget"
                                             placeholder="Exact budget"
                                         />
                                         <label for="exact-budget">Do you have an exact budget?</label>
@@ -300,50 +301,13 @@
                                     </button>
                                 </form>
 
-                                <!-- Message feedback -->
                                 <p class="form-message mt-3 fw-bold"></p>
                             </div>
-
-                            <script>
-                                document.addEventListener("DOMContentLoaded", function () {
-                                    const form = document.getElementById("contact-form");
-                                    const message = document.querySelector(".form-message");
-
-                                    form.addEventListener("submit", async function (e) {
-                                        e.preventDefault();
-
-                                        const formData = new FormData(form);
-
-                                        try {
-                                            const response = await fetch(form.action, {
-                                                method: form.method,
-                                                body: formData,
-                                                headers: { Accept: "application/json" },
-                                            });
-
-                                            if (response.ok) {
-                                                message.textContent =
-                                                    "✅ Thank you! Your message has been sent successfully.";
-                                                message.style.color = "green";
-                                                form.reset();
-                                            } else {
-                                                const errorData = await response.json();
-                                                console.error("Formspree error:", errorData);
-                                                message.textContent = "❌ Something went wrong. Please try again.";
-                                                message.style.color = "red";
-                                            }
-                                        } catch (error) {
-                                            console.error("Network error:", error);
-                                            message.textContent = "❌ Network error. Please try again later.";
-                                            message.style.color = "red";
-                                        }
-                                    });
-                                });
-                            </script>
                         </div>
                     </div>
                 </section>
                 <!-- ***** Contact Area End ***** -->
+
 
                 <!-- ***** Footer Area Start ***** -->
                 <footer class="footer-area bg-white">
@@ -521,5 +485,5 @@
         <script src="assets/js/main.js"></script>
     </body>
 
-    <!-- Mirrored from theme-land.com/Khajavali/demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jul 2025 06:02:34 GMT -->
+    
 </html>
